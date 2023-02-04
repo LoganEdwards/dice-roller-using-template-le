@@ -8,47 +8,53 @@
     .Bold{
         font-weight: bold;
     }
+    .num{
+        text-align: right;
+    }
 </style>
-<head>
-    <title>Dice Roller</title>
-</head>
+
+<title>Dice Roller</title>
+
 <body>
-    <script>
-        document.getElementById("Random")
-    </script>
+    
+    
     <h1>5 Dice Rolling Simulator</h1>
     <p>This program rolls 5 dice and formats the output in a table.</p>
-    <table style="width:100%">
+    
+    <table style="width:50%">
         <tr class="Bold">
             <td>Dice #</td>
             <td>Current Roll</td>
-            <td>Total value</td>
         </tr>
-        <tr>
-            <td>Dice 1</td>
-            <td>getRandom()</td>
-            <td>num += prev</td>
+        <tr class="num">
+            <td>1</td>
+            <td class="rand"></td>
         </tr>
-        <tr>
-            <td>Dice 2</td>
-            <td>getRandom()</td>
-            <td>num += prev</td>
+        <tr class="num">
+            <td>2</td>
+            <td class="rand"></td>
         </tr>
-        <tr>
-            <td>Dice 3</td>
-            <td>getRandom()</td>
-            <td>num += prev</td>
+        <tr class="num">
+            <td>3</td>
+            <td class="rand"></td>
         </tr>
-        <tr>
-            <td>Dice 4</td>
-            <td>getRandom()</td>
-            <td>num += prev</td>
+        <tr class="num">
+            <td>4</td>
+            <td class="rand"></td>
         </tr>
-        <tr>
-            <td>Dice 5</td>
-            <td>getRandom()</td>
-            <td>num += prev</td>
+        <tr class="num">
+            <td>5</td>
+            <td class="rand"></td>
         </tr>
     </table>
+
+    <script>
+        function getRandom(){
+            document.getElementsByClassName("rand").innerHTML = Math.floor(Math.random()*6) + 1;
+            return Math.floor(Math.random()* 6) +1;
+        }
+        
+    </script>
+
 </body>
 </html>
