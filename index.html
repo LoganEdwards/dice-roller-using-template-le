@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<style>
+    table, tr, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    .Bold{
+        font-weight: bold;
+    }
+</style>
 <head>
-<title>Hello World Azure Template</title>
+    <title>Dice Roller</title>
 </head>
 <body>
-<h1>Azure Static Website Template</h1>
-<p>This page is a sample page for a “Hello World” Azure Static Website Template. The page contains an HTML validation warning. 
-Can you find and fix that warning? What about the curly quotes? Do they current work in all browsers? Can you fix the curly 
-quotes also? And what about proper indenting?</p>
+    <script>
+        document.getElementById("Random")
+    </script>
+    <h1>5 Dice Rolling Simulator</h1>
+    <p>This program rolls 5 dice and formats the output in a table.</p>
+    <table style="width:100%">
+        <tr class="Bold">
+            <td>Dice #</td>
+            <td>Current Roll</td>
+            <td>Total value</td>
+        </tr>
+        <tr>
+            <td>Dice 1</td>
+            <td>getRandom()</td>
+            <td>num += prev</td>
+        </tr>
+        <tr>
+            <td>Dice 2</td>
+            <td>getRandom()</td>
+            <td>num += prev</td>
+        </tr>
+        <tr>
+            <td>Dice 3</td>
+            <td>getRandom()</td>
+            <td>num += prev</td>
+        </tr>
+        <tr>
+            <td>Dice 4</td>
+            <td>getRandom()</td>
+            <td>num += prev</td>
+        </tr>
+        <tr>
+            <td>Dice 5</td>
+            <td>getRandom()</td>
+            <td>num += prev</td>
+        </tr>
+    </table>
 </body>
 </html>
