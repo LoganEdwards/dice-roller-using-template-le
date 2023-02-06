@@ -19,44 +19,43 @@
     
     <h1>5 Dice Rolling Simulator</h1>
     <p>This program rolls 5 dice and formats the output in a table.</p>
+    <button type="button" onclick="getRandom()">Roll the Dice</button>
     
+
+    <br>
     <table style="width: 400px;">
         <tr class="Bold">
             <td class="num">Dice #</td>
             <td class="num">Roll</td>
         </tr>
-        <div class="rand">
+        
             <tr class="num">
                 <td>1</td>
-                <td id="random"></td>
+                <td><input id="rand" type="text" value="" size="2" disabled></td>
             </tr>
             <tr class="num">
                 <td>2</td>
-                <td></td>
+                <td><input id="rand" type="text" value="" size="2" disabled></td>
             </tr>
             <tr class="num">
                 <td>3</td>
-                <td></td>
+                <td><input id="rand" type="text" value="" size="2" disabled></td>
             </tr>
             <tr class="num">
                 <td>4</td>
-                <td></td>
+                <td><input id="rand" type="text" value="" size="2" disabled></td>
             </tr>
             <tr class="num">
                 <td>5</td>
-                <td></td>
+                <td><input id="rand" type="text" value="" size="2" disabled></td>
             </tr>
-        </div>
-    </table>
 
-    <br>
-    <button onclick="document.getElementsByClassName('rand')">Roll the Dice</button>
+    </table>
 
     <script>
         function getRandom(){
-            document.getElementsByID("rand").innerHTML = Math.floor(Math.random()*6) + 1;
+            document.getElementByID("rand").value = Math.floor(Math.random()*6) + 1;
         }
-
     </script>
 
 </body>
